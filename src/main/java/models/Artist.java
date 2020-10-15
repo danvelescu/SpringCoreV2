@@ -1,13 +1,15 @@
 package models;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
-@Component
+
 public class Artist {
     private String name;
     private MusicType musicType;
     private String name_of_song;
 
+    @Autowired
     public Artist(MusicType musicType){
         this.name = "Skrip";
         this.musicType = musicType;
