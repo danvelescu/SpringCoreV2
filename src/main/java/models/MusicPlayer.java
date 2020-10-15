@@ -12,9 +12,7 @@ public class MusicPlayer {
         this.artist = artist;
     }
 
-
-
     public void play() {
-        System.out.println("Play " + artist.getName() + " " + artist.getName_of_song() + " " + artist.getMusicType().getMusic_type_name());
+        System.out.println("Play " + artist.getName() + " " + artist.getName_of_song() + " " + artist.getMusicType().music);
     }
 }

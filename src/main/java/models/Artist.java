@@ -1,9 +1,10 @@
 package models;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;
 
-
+@Component
 public class Artist {
     private String name;
     private MusicType musicType;
@@ -16,9 +17,6 @@ public class Artist {
         name_of_song = "3x3";
     }
 
-    public void setMusicType(MusicType musicType) {
-        this.musicType = musicType;
-    }
 
     public void setName_of_song(String name_of_song) {
         this.name_of_song = name_of_song;

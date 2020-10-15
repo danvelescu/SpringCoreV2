@@ -1,14 +1,14 @@
 package models;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.stereotype.Component;
 
+@Component
 public class MusicType {
-    private String music_type = "Pop";
+    @Autowired
+    @Qualifier("popmusic")
+    Music music;
 
-    public void setMusic_type(String music_type) {
-        this.music_type = music_type;
-    }
-
-    public String getMusic_type_name() {
-        return music_type;
-    }
 }
+
