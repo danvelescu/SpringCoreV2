@@ -1,9 +1,18 @@
 package models;
 
-public class Artist{
+import org.springframework.stereotype.Component;
+
+@Component
+public class Artist {
     private String name;
-   private MusicType musicType;
+    private MusicType musicType;
     private String name_of_song;
+
+    public Artist(MusicType musicType){
+        this.name = "Skrip";
+        this.musicType = musicType;
+        name_of_song = "3x3";
+    }
 
     public void setMusicType(MusicType musicType) {
         this.musicType = musicType;
